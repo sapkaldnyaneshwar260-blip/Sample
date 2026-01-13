@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h1>Login</h1>
+
+        <form id="fm">
+            <input type="text" id="uname" placeholder="Username">
+            <input type="password" id="pwd" placeholder="Password">
+            <input type="button" id="lgn" value="Login" onclick="login()">
+        </form>
+
+        <span class="lnpg">Forgot Password?</span>
+        <span class="lnpg">New user?<a href="">Create New Account</a> </span>
+
+    </div>
+    <script>
+
+        function login() {
+            let username = document.getElementById("uname").value;
+            let password = document.getElementById("pwd").value;
+
+            if (username === "admin" && password === "gpa123") {
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid Username or Password");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

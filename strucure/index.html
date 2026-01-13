@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Polytechnic</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .images {
+            width: 100%;
+            overflow: hidden;
+            /* Keeps movement inside this box */
+            white-space: nowrap;
+            border: 1px solid #191818;
+        }
+
+        .moving-images {
+            display: inline-block;
+            animation: marquee-scroll 10s linear infinite;
+        }
+
+        .videos {
+            display: inline-block;
+            animation: marquee-scroll 10s linear infinite;
+        }
+
+        @keyframes marquee-scroll {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <img id="logo" src="img.png" width="52" height="52" alt="Logo">
+
+        <div class="title">
+            <h1>Government Polytechnic, Amravati</h1>
+            <h3>An Autonomous Institute of Government of Maharashtra</h3>
+        </div>
+    </div>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <nav>
+            
+            <a href="#">Home</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Course</a>
+            <div class="dropdown">
+        <a href="#">Departments ▾</a>
+        <div class="dropdown-content">
+            <a href="#">Computer Engineering</a>
+            <a href="#">Mechanical Engineering</a>
+            <a href="#">Civil Engineering</a>
+            <a href="#">Electrical Engineering</a>
+        </div>
+    </div>
+            <a href="#">About Us</a>
+        </nav>
+
+    </div>
+
+<!-- menubar -->
+    <div>
+        <menu>
+        </menu>
+    </div>
+
+    <!-- Images -->
+    <div class="images">
+        <div class="moving-images">
+
+            <img src="img1.jpg" width="80%" height="280">
+            <img src="img2.jpg" width="50%" height="270">
+            <img src="img3.jpg" width="50%" height="270">
+
+        </div>
+    </div>
+
+    <!-- vision_mission -->
+    <div class="vision_mission" id="vm">
+        <h1 class="vision">VISION</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, numquam similique eum impedit esse, at
+            laborum ducimus animi magnam, excepturi velit deserunt porro tenetur. Similique ducimus, ad dicta quod
+            dolores nihil fugiat nemo nulla delectus a, eligendi repellat perferendis eum illum? Veritatis aspernatur
+            delectus obcaecati qui quisquam ut aliquam perferendis cum, atque beatae ducimus ipsa, neque modi similique
+            adipisci id iure repellat mollitia architecto. Fugit harum iusto beatae aperiam soluta.</p>
+        <h1 class="vision">MISSION</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, est repudiandae maxime atque, sit nihil
+            maiores reprehenderit perferendis illum delectus enim pariatur, consequuntur officia autem non. Ex cum enim
+            voluptatibus vitae esse labore pariatur commodi perferendis earum velit. Explicabo maiores, consequatur
+            alias quidem a temporibus cum odio expedita nihil deleniti quisquam eum amet, perspiciatis enim accusamus
+            nam dolorum eos! Voluptate alias, eum nemo error quaerat illo cum expedita consequatur quisquam!</p>
+    </div>
+
+    <!-- Ordered List -->
+    <div>
+        <h4>Ordered List</h4>
+        <ol>
+            <li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">youtube</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank">linkedin</a></li>
+            <li><a href="https://www.google.com/" target="_blank">google</a></li>
+
+        </ol>
+    </div>
+
+    <!-- Videos -->
+    <div class="videos">
+        <video src="dekha_ek_khwab.mp4" width="200" height="300" controls></video>
+        <video src="sing.mp4" width="200" height="300" controls></video>
+        <video src="sing1.mp4" width="200" height="300" controls></video>
+        <video src="sing2.mp4" width="200" height="300" controls></video>
+    </div>
+
+</body>
+
+</html>
